@@ -14,4 +14,7 @@
 #define COMBO_COUNT 3
 
 #define RGB_MATRIX_STARTUP_SPD 60
+// The default animation RGB_MATRIX_CYCLE_LEFT_RIGHT looks nice but cycles too
+// fast (default 128) for my taste.
+#define RGB_MATRIX_DEFAULT_SPD 16
 
