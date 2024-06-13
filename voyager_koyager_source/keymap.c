@@ -406,33 +406,36 @@ void dance_6_finished(tap_dance_state_t *state, void *user_data);
 void dance_6_reset(tap_dance_state_t *state, void *user_data);
 
 void on_dance_6(tap_dance_state_t *state, void *user_data) {
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_X) : KC_X;
     if(state->count == 3) {
-        tap_code16(KC_X);
-        tap_code16(KC_X);
-        tap_code16(KC_X);
+        tap_code16(actual_tap);
+        tap_code16(actual_tap);
+        tap_code16(actual_tap);
     }
     if(state->count > 3) {
-        tap_code16(KC_X);
+        tap_code16(actual_tap);
     }
 }
 
 void dance_6_finished(tap_dance_state_t *state, void *user_data) {
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_X) : KC_X;
     dance_state[6].step = dance_step(state);
     switch (dance_state[6].step) {
-        case SINGLE_TAP: register_code16(KC_X); break;
+        case SINGLE_TAP: register_code16(actual_tap); break;
         case SINGLE_HOLD: register_code16(LGUI(KC_X)); break;
-        case DOUBLE_TAP: register_code16(KC_X); register_code16(KC_X); break;
-        case DOUBLE_SINGLE_TAP: tap_code16(KC_X); register_code16(KC_X);
+        case DOUBLE_TAP: register_code16(actual_tap); register_code16(actual_tap); break;
+        case DOUBLE_SINGLE_TAP: tap_code16(actual_tap); register_code16(actual_tap);
     }
 }
 
 void dance_6_reset(tap_dance_state_t *state, void *user_data) {
     wait_ms(10);
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_X) : KC_X;
     switch (dance_state[6].step) {
-        case SINGLE_TAP: unregister_code16(KC_X); break;
+        case SINGLE_TAP: unregister_code16(actual_tap); break;
         case SINGLE_HOLD: unregister_code16(LGUI(KC_X)); break;
-        case DOUBLE_TAP: unregister_code16(KC_X); break;
-        case DOUBLE_SINGLE_TAP: unregister_code16(KC_X); break;
+        case DOUBLE_TAP: unregister_code16(actual_tap); break;
+        case DOUBLE_SINGLE_TAP: unregister_code16(actual_tap); break;
     }
     dance_state[6].step = 0;
 }
@@ -441,33 +444,36 @@ void dance_7_finished(tap_dance_state_t *state, void *user_data);
 void dance_7_reset(tap_dance_state_t *state, void *user_data);
 
 void on_dance_7(tap_dance_state_t *state, void *user_data) {
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_C) : KC_C;
     if(state->count == 3) {
-        tap_code16(KC_C);
-        tap_code16(KC_C);
-        tap_code16(KC_C);
+        tap_code16(actual_tap);
+        tap_code16(actual_tap);
+        tap_code16(actual_tap);
     }
     if(state->count > 3) {
-        tap_code16(KC_C);
+        tap_code16(actual_tap);
     }
 }
 
 void dance_7_finished(tap_dance_state_t *state, void *user_data) {
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_C) : KC_C;
     dance_state[7].step = dance_step(state);
     switch (dance_state[7].step) {
-        case SINGLE_TAP: register_code16(KC_C); break;
+        case SINGLE_TAP: register_code16(actual_tap); break;
         case SINGLE_HOLD: register_code16(LGUI(KC_C)); break;
-        case DOUBLE_TAP: register_code16(KC_C); register_code16(KC_C); break;
-        case DOUBLE_SINGLE_TAP: tap_code16(KC_C); register_code16(KC_C);
+        case DOUBLE_TAP: register_code16(actual_tap); register_code16(actual_tap); break;
+        case DOUBLE_SINGLE_TAP: tap_code16(actual_tap); register_code16(actual_tap);
     }
 }
 
 void dance_7_reset(tap_dance_state_t *state, void *user_data) {
     wait_ms(10);
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_C) : KC_C;
     switch (dance_state[7].step) {
-        case SINGLE_TAP: unregister_code16(KC_C); break;
+        case SINGLE_TAP: unregister_code16(actual_tap); break;
         case SINGLE_HOLD: unregister_code16(LGUI(KC_C)); break;
-        case DOUBLE_TAP: unregister_code16(KC_C); break;
-        case DOUBLE_SINGLE_TAP: unregister_code16(KC_C); break;
+        case DOUBLE_TAP: unregister_code16(actual_tap); break;
+        case DOUBLE_SINGLE_TAP: unregister_code16(actual_tap); break;
     }
     dance_state[7].step = 0;
 }
@@ -476,33 +482,36 @@ void dance_8_finished(tap_dance_state_t *state, void *user_data);
 void dance_8_reset(tap_dance_state_t *state, void *user_data);
 
 void on_dance_8(tap_dance_state_t *state, void *user_data) {
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_V) : KC_V;
     if(state->count == 3) {
-        tap_code16(KC_V);
-        tap_code16(KC_V);
-        tap_code16(KC_V);
+        tap_code16(actual_tap);
+        tap_code16(actual_tap);
+        tap_code16(actual_tap);
     }
     if(state->count > 3) {
-        tap_code16(KC_V);
+        tap_code16(actual_tap);
     }
 }
 
 void dance_8_finished(tap_dance_state_t *state, void *user_data) {
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_V) : KC_V;
     dance_state[8].step = dance_step(state);
     switch (dance_state[8].step) {
-        case SINGLE_TAP: register_code16(KC_V); break;
+        case SINGLE_TAP: register_code16(actual_tap); break;
         case SINGLE_HOLD: register_code16(LGUI(KC_V)); break;
-        case DOUBLE_TAP: register_code16(KC_V); register_code16(KC_V); break;
-        case DOUBLE_SINGLE_TAP: tap_code16(KC_V); register_code16(KC_V);
+        case DOUBLE_TAP: register_code16(actual_tap); register_code16(actual_tap); break;
+        case DOUBLE_SINGLE_TAP: tap_code16(actual_tap); register_code16(actual_tap);
     }
 }
 
 void dance_8_reset(tap_dance_state_t *state, void *user_data) {
     wait_ms(10);
+    const uint16_t actual_tap = is_caps_word_on() ? LSFT(KC_V) : KC_V;
     switch (dance_state[8].step) {
-        case SINGLE_TAP: unregister_code16(KC_V); break;
+        case SINGLE_TAP: unregister_code16(actual_tap); break;
         case SINGLE_HOLD: unregister_code16(LGUI(KC_V)); break;
-        case DOUBLE_TAP: unregister_code16(KC_V); break;
-        case DOUBLE_SINGLE_TAP: unregister_code16(KC_V); break;
+        case DOUBLE_TAP: unregister_code16(actual_tap); break;
+        case DOUBLE_SINGLE_TAP: unregister_code16(actual_tap); break;
     }
     dance_state[8].step = 0;
 }
