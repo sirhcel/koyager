@@ -27,3 +27,8 @@
 #define DE_DQOT S(KC_2)
 #define DE_QUOT S(KC_NUHS)
 #define DE_SCLN S(KC_COMM)
+
+
+#define DE_UDIA KC_LBRC // Ü
+#define DE_ODIA KC_SCLN // Ö
+#define DE_ADIA KC_QUOT // Ä
