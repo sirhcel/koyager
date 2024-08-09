@@ -54,14 +54,14 @@ enum tap_dance_codes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
     TD(DANCE_0),    KC_1,           KC_2,           KC_3,           KC_4,           KC_5,                                           KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           DE_MINS,        
-    TD(DANCE_1),    LT(5,KC_K),     MT(MOD_LALT, KC_DOT),LT(3,KC_O),     KC_COMMA,       DE_Y,                                           KC_V,           KC_G,           LT(3,KC_C),     MT(MOD_RALT, KC_L),LT(5,DE_SS),    DE_Z,           
+    TD(DANCE_1),    LT(5,KC_K),     MT(MOD_LALT, KC_DOT),LT(3,KC_O),     LT(4,KC_COMMA), DE_Y,                                           KC_V,           LT(4,KC_G),     LT(3,KC_C),     MT(MOD_RALT, KC_L),LT(5,DE_SS),    DE_Z,           
     CW_TOGG,        MT(MOD_LCTL, KC_H),MT(MOD_LGUI, KC_A),LT(2,KC_E),     MT(MOD_LSFT, KC_I),KC_U,                                           KC_D,           MT(MOD_RSFT, KC_T),LT(2,KC_R),     MT(MOD_RGUI, KC_N),MT(MOD_RCTL, KC_S),KC_F,           
     KC_TRANSPARENT, KC_X,           TD(DANCE_2),    TD(DANCE_3),    TD(DANCE_4),    DE_OE,                                          KC_B,           KC_P,           KC_W,           KC_M,           KC_J,           DE_ACUT,        
                                                     KC_BSPC,        KC_ENTER,                                       TD(DANCE_5),    KC_SPACE
   ),
   [1] = LAYOUT_voyager(
     TO(0),          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, DE_SS,          
-    KC_TRANSPARENT, LT(5,KC_Q),     MT(MOD_LALT, KC_W),LT(3,KC_E),     KC_R,           KC_T,                                           DE_Z,           KC_U,           LT(3,KC_I),     MT(MOD_RALT, KC_O),LT(5,KC_P),     DE_UE,          
+    KC_TRANSPARENT, LT(5,KC_Q),     MT(MOD_LALT, KC_W),LT(3,KC_E),     LT(4,KC_R),     KC_T,                                           DE_Z,           LT(4,KC_U),     LT(3,KC_I),     MT(MOD_RALT, KC_O),LT(5,KC_P),     DE_UE,          
     KC_TRANSPARENT, MT(MOD_LCTL, KC_A),MT(MOD_LGUI, KC_S),LT(2,KC_D),     MT(MOD_LSFT, KC_F),KC_G,                                           KC_H,           MT(MOD_RSFT, KC_J),LT(2,KC_K),     MT(MOD_RGUI, KC_L),MT(MOD_RCTL, DE_OE),DE_AE,          
     KC_TRANSPARENT, DE_Y,           TD(DANCE_6),    TD(DANCE_7),    TD(DANCE_8),    KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         DE_MINS,        KC_TRANSPARENT, 
                                                     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
