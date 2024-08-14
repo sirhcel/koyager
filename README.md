@@ -1,3 +1,13 @@
+# Koyager
+
+This is a German KOY [keyboard
+layout](https://configure.zsa.io/voyager/layouts/NYAlw/latest/0) for the ZSA
+Voyager with customizations beyond the current capabilities:
+
+* Caps Word support for German (especically the underscore)
+* Activating Caps Word as a key combo
+* Slower default animation speed
+
 # Building your layout from source
 
 Congratulations on taking the next step, and making use of your keyboard's open-source nature! There's so much power to unlock — this is going to be fun. :)
